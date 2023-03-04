@@ -13,6 +13,10 @@ setup(
     author_email="xxx@163.com",
     package_dir={'myGrep':'myGrep'},         # 指定哪些包的文件被映射到哪个源码包
     packages=['myGrep'],       # 需要打包的目录。如果多个的话，可以使用find_packages()自动发现
+  
+    # https://zhuanlan.zhihu.com/p/276461821
+    # 用来支持自动生成脚本，安装后会自动生成 /usr/bin/my_wordgrep 的可执行文件
+    # 该文件入口指向 myGrep/my_wordgrep.py的main 函数
     entry_points={
         'console_scripts': [
             'my_wordgrep = myGrep.my_wordgrep:main'
