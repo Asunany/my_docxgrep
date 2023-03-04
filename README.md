@@ -1,11 +1,11 @@
 # 名称
-项目名称：my_docxgrep  
+项目名称：my_wordgrep  
 
 1.基于他人的代码，做了一点改进。  
 2.实现对docx格式的批量文档内容的搜索，并标红
 
 # 用法
-python my_wordGrep.py  -f *.docx -w 'hello'
+python my_wordgrep.py  -f *.docx -w 'hello'
 
 # 编译
 
