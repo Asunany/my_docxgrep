@@ -1,6 +1,7 @@
-# my_docxgrep
-基于他人的代码，做了一点改进。
-1. 实现对docx格式的批量文档内容的搜索
+# 名称
+项目名称：my_docxgrep
+1.基于他人的代码，做了一点改进。
+2.实现对docx格式的批量文档内容的搜索，并标红
 
 # 用法
 python my_wordGrep.py  -f *.docx -w 'hello'
