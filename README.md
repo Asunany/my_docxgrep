@@ -9,23 +9,23 @@ python my_wordGrep.py  -f *.docx -w 'hello'
 
 # 编译
 
-项目目录结构和setup.py文件都就绪之后，就可以开始编译并打包了；首先最好升级下打包相关的基础库。
+项目目录结构和setup.py文件都就绪之后，就可以开始编译并打包了；首先最好升级下打包相关的基础库。  
 
-python -m pip install --upgrade pip
-pip install --upgrade setuptools wheel
+python -m pip install --upgrade pip  
+pip install --upgrade setuptools wheel  
 
-接着，从命令行进入项目的根目录，通过如下命令即可进行编译打包操作：
+接着，从命令行进入项目的根目录，通过如下命令即可进行编译打包操作：  
 
-python setup.py sdist       # 打源码包
-python setup.py bdist       # 打二进制包
-python setup.py bdist_egg       # 打egg包
-python setup.py bdist_wheel     # 打wheel包
+python setup.py sdist       # 打源码包  
+python setup.py bdist       # 打二进制包  
+python setup.py bdist_egg       # 打egg包  
+python setup.py bdist_wheel     # 打wheel包  
 
 # 本地测试
-在打包后，可以本地进行安装和使用测试，也可以通过如下命令直接安装：
+在打包后，可以本地进行安装和使用测试，也可以通过如下命令直接安装：  
 
-python setup.py build
-python setup.py install
+python setup.py build  
+python setup.py install  
 
 # 参考
-https://blog.51cto.com/u_15918230/5954850
+https://blog.51cto.com/u_15918230/5954850  
